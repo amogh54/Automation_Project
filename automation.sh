@@ -71,7 +71,7 @@ cron=/etc/cron.d/automation
 if [ -f "$cron" ]; then
         echo "Cron Already Set"
 else
-        echo "30 00 * * root /root/Automation_Project/automation.sh" > /etc/cron.d/automation
+        echo "30 00 * * * root /root/Automation_Project/automation.sh" > /etc/cron.d/automation
         echo "Cron Successfully Set"
 
 fi
